@@ -42,9 +42,9 @@
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.16.1",
     "jest-cli": "^15.1.1",
-    "react": ">=15.0.0",
     "react-addons-test-utils": "^15.3.2",
     "react-dom": ">=15.0.0",
+    "react": "15.3.2",
     "standard": "*"
   },
   "peerDependencies": {
