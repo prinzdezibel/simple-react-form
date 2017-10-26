@@ -341,9 +341,9 @@ export default class Form extends React.Component {
         if (!isFunction(this.props.onSubmit)) {
           throw new Error('You must pass a onSubmit function or set the form type to insert or update')
         }
-        const presentFields = getPresentFields(this.fields)
-        const cleanDoc = cleanFields(DotObject.dot(data), presentFields)
-        var success = this.props.onSubmit(DotObject.object(DotObject.dot(cleanDoc)))
+        // const presentFields = getPresentFields(this.fields)
+        // const cleanDoc = cleanFields(DotObject.dot(data), presentFields)
+        var success = this.props.onSubmit(DotObject.object(DotObject.dot(data)))
         if (success === false) {
           this.onCommit('onSubmit error')
         } else {
